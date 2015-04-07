@@ -1,0 +1,24 @@
+<div>
+	<div class="panel panel-default">
+	  <div class="panel-heading">Users</div>
+	  <div class="panel-body">
+	  	<table>
+			<thead class="table">
+				<tr>
+					<td>User ID</td>
+					<td>User Name</td>
+					<td>Action</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="user in users">
+					<td>{{user.id}}</td>
+					<td>{{user.name}}</td>
+					<td><button class="btn btn-danger" ng-click="deleteUser(user)">Delete</button><a href="#/details/{{user.id}}">Edit</a></td>
+				</tr>
+			</tbody>
+		</table>
+	  </div>
+	</div>
+
+</div>
